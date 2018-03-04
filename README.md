@@ -72,7 +72,35 @@ String is simply defined as a series of characters enclosed by a pair special ch
 
 Integers and floats are the most basic data types in `python` allowing you to work on multiplication (`+`), subtract (`-`), multiply (`*`) and division (`/`). For integers, you can make operations with exponential (`**`) and modular (`%`) and residue (`//`). Let us do some fun calculations
 
+
 ```python
+"""
+Example to understand numbers
+"""
+
+def calculate_time(num_years):
+    """
+    A function to calculate an amount of time measured in years
+
+    Args:
+        num_years (int): number of years
+
+    Returns:
+       (int) an amount of time measured in terms of seconds by years
+
+    """
+    num_second_per_minute = 60
+    num_minutes_per_hour = 60
+    num_hour_per_day = 24
+    num_day_per_month = 30  # Let us simplify this part by an average
+    num_month_per_year = 12
+    return (num_second_per_minute \
+          * num_minutes_per_hour \
+          * num_hour_per_day \
+          * num_day_per_month \
+          * num_month_per_year) * num_years
+
+print(sum_calculation(2000))
 
 ```
 
