@@ -1,16 +1,34 @@
 ### Pyladies Workshop 2: Variables and simple data types
-
-Welcome to the second workshop of Pyladies - Ho Chi Minh chapter. This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise. Most of content in this workshop is adapted from "...." and "..." for `python 3`
+---
+Welcome to the second workshop of Pyladies - Ho Chi Minh chapter. This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise. Most of content in this workshop is adapted from "Python Crash Course: A Hands-on, Project-based Introduction to Programming" by Eric Matthes and "Developer Class" in `python 3`.
 
 Feel free to reach out to us if you have any question.
 
 #### Outline
+0. Zen of Python
 1. Examples of variables
 2. How to name and use variable
 3. Understand String
 4. Understand Number
 5. Combine String and numbers
 6. Review
+
+### Zen of Python
+
+Pythonistas, a Pythonic way to called Python users, love simplicity and readability. Our philosophy is that the code should be beautiful and elegant. Try to run the following code to get a `The Zen of Python` by Tim Peters
+```python
+
+import this
+
+```
+
+One of the most important take-away notices for you is that
+
+```
+Now is better than never
+```
+
+Again, we would emphasize that the best way to learn and practice Python is starting with a simple and workable code for any project rather waiting until learning every details but never know when it would end. That's why Pyladies is here to help :)
 
 ### What are variables and some examples
 
@@ -42,17 +60,17 @@ Some rules to help you
 
 ### Understand string
 
-String is simply defined as a series of characters enclosed by a pair special characters. Indeed, there are three of them, e.g. `"`, `"`, and `"""` with respect to double quotes, quotes and triple quote. So, what is a difference
+String is simply defined as a series of characters enclosed by a pair special characters. Indeed, there are three of them, e.g. `"`, `"`, and `"""` with respect to double quotes, astrophes and triple quote. So, what is a difference
 
 ```python
 
 "Hello! I am a pythonista."
-'Hello! I am a pythoninsta'
+'Hello! I am a pythonista.'
 ```
 
 ### Understand numbers
 
-Integers and floats are the most basic data types in `python` allowing you to work on multiplication (`+`), subtract (`-`), multiply (`*`) and division (`/`). For integers, you can make operations with exponential (`**`) and modular (`%`) and residue (`//`). Let us do some fun calculation
+Integers and floats are the most basic data types in `python` allowing you to work on multiplication (`+`), subtract (`-`), multiply (`*`) and division (`/`). For integers, you can make operations with exponential (`**`) and modular (`%`) and residue (`//`). Let us do some fun calculations
 
 ```python
 
@@ -68,6 +86,7 @@ message = "Happy year of " + year
 print(message)
 ```
 How to fix this
+
 
 ```python
 year = 2018
