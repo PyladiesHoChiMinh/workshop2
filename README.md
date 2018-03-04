@@ -1,6 +1,6 @@
 ### Pyladies Workshop 2: Variables and simple data types
----
-Welcome to the second workshop of Pyladies - Ho Chi Minh chapter. This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise. Most of content in this workshop is adapted from "Python Crash Course: A Hands-on, Project-based Introduction to Programming" by Eric Matthes and "Developer Class" in `python 3`.
+___
+Welcome to the second workshop of Pyladies - Ho Chi Minh chapter. This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise. Most of content in this workshop is adapted from "Python Crash Course: A Hands-on, Project-based Introduction to Programming" by Eric Matthes and "Developer Class" by Google in `python 3`.
 
 Feel free to reach out to us if you have any question.
 
@@ -16,6 +16,7 @@ Feel free to reach out to us if you have any question.
 ### Zen of Python
 
 Pythonistas, a Pythonic way to called Python users, love simplicity and readability. Our philosophy is that the code should be beautiful and elegant. Try to run the following code to get a `The Zen of Python` by Tim Peters
+
 ```python
 
 import this
@@ -67,7 +68,24 @@ String is simply defined as a series of characters enclosed by a pair special ch
 "Hello! I am a pythonista."
 'Hello! I am a pythonista.'
 ```
+#### Manipulated with string
 
+`string` or `str` as a built-in class is supported in `Python` with a lot of features. For example,
+
+- `len`: returns a length of a string
+- `str`: convert a non-string object to string object
+-  **Indexing**: Assume that you have a string called `message`. You can take an element or a list of elements inside that string out by `message[i]`
+- **Concatenation**: Combine two string as one by `+`
+
+Another nice things of `string` are built-in methods allowing you to "fly in the sky" You might want to see the most common which I stole from Google Developer Class in the following classes:
+- s.lower(), s.upper() -- returns the lowercase or uppercase version of the string
+- s.strip() -- returns a string with whitespace removed from the start and end
+- s.isalpha()/s.isdigit()/s.isspace()... -- tests if all the string chars are in the various character classes
+- s.startswith('other'), s.endswith('other') -- tests if the string starts or ends with the given other string
+- s.find('other') -- searches for the given other string (not a regular expression) within s, and returns the first index where it begins or -1 if not found
+- s.replace('old', 'new') -- returns a string where all occurrences of 'old' have been replaced by 'new'
+- s.split('delim') -- returns a list of substrings separated by the given delimiter. The delimiter is not a regular expression, it's just text. 'aaa,bbb,ccc'.split(',') -> ['aaa', 'bbb', 'ccc']. As a convenient special case s.split() (with no arguments) splits on all whitespace chars.
+- s.join(list) -- opposite of split(), joins the elements in the given list together using the string as the delimiter. e.g. '---'.join(['aaa', 'bbb', 'ccc']) -> aaa---bbb---ccc
 ### Understand numbers
 
 Integers and floats are the most basic data types in `python` allowing you to work on multiplication (`+`), subtract (`-`), multiply (`*`) and division (`/`). For integers, you can make operations with exponential (`**`) and modular (`%`) and residue (`//`). Let us do some fun calculations
@@ -75,7 +93,7 @@ Integers and floats are the most basic data types in `python` allowing you to wo
 
 ```python
 """
-Example to understand numbers
+Example to understand numbers with multiplication and sum
 """
 
 def calculate_time(num_years):
@@ -101,6 +119,7 @@ def calculate_time(num_years):
           * num_month_per_year) * num_years
 
 print(sum_calculation(2000))
+print(sum_calculation(2000.0))
 
 ```
 
