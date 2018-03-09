@@ -1,8 +1,12 @@
-### Pyladies Workshop 2: Variables and simple data types
+# Pyladies Workshop 2: Variables and simple data types
 ___
-Welcome to the second workshop of Pyladies - Ho Chi Minh chapter. This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise. Most of content in this workshop is adapted from "Python Crash Course: A Hands-on, Project-based Introduction to Programming" by Eric Matthes and "Developer Class" by Google in `python 3`.
+Welcome to the second workshop of Pyladies - Ho Chi Minh chapter!
 
-Feel free to reach out to us if you have any question.
+This time we will continue to learn more about Python by starting with simple examples and working in pairs to help each other understand instruction and complete excercise.
+
+Most of content in this workshop is adapted from "Python Crash Course: A Hands-on, Project-based Introduction to Programming" by Eric Matthes and "Developer Class" by Google in `python 3`.
+
+Feel free to reach out to us if you have any question. And don't forget to ask two people sitting next to you for some (unexpected but super helpful advice)!
 
 #### Outline
 0. Zen of Python
